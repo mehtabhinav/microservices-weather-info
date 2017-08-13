@@ -1,0 +1,19 @@
+{
+  "name": "weather-info",
+  "version": "1.0.0",
+  "description": "weather information based on location",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel src -d lib",
+    "start": "babel server.js --out-dir build --presets=es2015"
+  },
+  "author": "Abhinav Mehta",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "node-fetch": "^1.7.2"
+  },
+  "devDependencies": {}
+}
